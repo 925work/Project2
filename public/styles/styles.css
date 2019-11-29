@@ -1,3 +1,47 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+body {
+  background-color: black;
+}
+
+/* log in page */
+
+.jumbotron {
+  font-family: 'Limelight', cursive;
+  background-color: black;
+  color: white;
+}
+
+.display-4 {
+  color: rgb(207, 17, 17);
+  font-size: 72px; 
+}
+
+.btn {
+  background-color: white;
+  color: black;
+}
+
+.extras {
+  font-family: 'Limelight', cursive;
+}
+
+.card {
+  background-color: rgb(207, 17, 17);
+  color: black;
+  border-width: 2px;
+  border-color: black;
+}
+
+p {
+  color: white;
+}
+
+/* main page */
+#currentMovies,
+#upcomingMovies {
+  color: red;
+
+}
