@@ -45,3 +45,39 @@ p {
   color: red;
 
 }
+
+/* chatroom pages */
+
+#chatroomTitle{
+  background-color: rgb(41, 41, 41);
+  color: red;
+  border: 2px solid black;
+  font-family: 'Limelight', cursive;
+}
+
+#chattersContainer{
+  background-color: rgb(41, 41, 41);
+  color: rgb(171, 1, 1);
+  height: 500px;
+  border: 2px solid black;
+}
+
+#chatboxContainer{
+  background-color: rgb(125, 125, 125);
+  height: 500px;
+  border: 2px solid black;
+  padding-top: 10px;
+}
+
+#sendContainer{
+  background-color: rgb(125, 125, 125);
+  border: 2px solid black;
+  height: 60px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.sendButton{
+  background-color: rgb(171, 1, 1);
+  color: white;
+}
