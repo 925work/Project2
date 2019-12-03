@@ -37,12 +37,14 @@ body {
 
 p {
   color: white;
+  font-family: 'Gupter', serif;
 }
 
 /* main page */
 #currentMovies,
 #upcomingMovies {
   color: red;
+  font-family: 'Limelight', cursive;
 
 }
 
