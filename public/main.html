@@ -2,157 +2,192 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./styles/styles.css" type="text/css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Limelight|Notable&display=swap" rel="stylesheet">
-    <title>Movie Chats</title>
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Notable&display=swap" rel="stylesheet">
+  <title>Movie Chats</title>
 </head>
 
 <body>
-        <nav class="navbar navbar-dark bg-dark">
-                <a class="navbar-brand" href="../public/chatroom.html">Movie Chats</a>  
-              </nav>
-
-    <div class="container" id="currentMovies">
-        <div class="row">
-            <h2>Movies in Theaters</h2>
-        </div>
-        <div class="card-group">
-            <div class="card style="width: 15rem;>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis sint at cum. Laudantium vitae nisi modi doloribus consequuntur? Autem voluptatem repellendus rerum, ad vero ipsa? Corrupti earum ipsa in?</p>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card style="width: 15rem;"">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia excepturi soluta maxime quis placeat tempora saepe asperiores similique illum nesciunt illo enim repellat rem qui, aut accusamus porro dolor! Iure.</p>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card style="width: 15rem;"">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card style="width: 15rem;"">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                  <p class="card-text"></p>
-                </div>
-              </div>
-          </div>
-          <div class="card-group">
-            <div class="card style="width: 15rem;>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis sint at cum. Laudantium vitae nisi modi doloribus consequuntur? Autem voluptatem repellendus rerum, ad vero ipsa? Corrupti earum ipsa in?</p>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card style="width: 15rem;"">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia excepturi soluta maxime quis placeat tempora saepe asperiores similique illum nesciunt illo enim repellat rem qui, aut accusamus porro dolor! Iure.</p>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card style="width: 15rem;"">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                <p class="card-text"></p>
-              </div>
-            </div>
-            <div class="card style="width: 15rem;"">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                  <p class="card-text"></p>
-                </div>
-              </div>
-          </div>
-    
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Movie Chats</h1>
+      <h3>Live chatrooms for the top movies in theaters.</h3>
+      <h3>To get started, simply click the movie that interests you the most!</h3>
     </div>
-    <br>
-    <div class="container" id="upcomingMovies">
-            <div class="row">
-                <h2>Upcoming Movies</h2>
-            </div>
-            <div class="card-group">
-                <div class="card style="width: 15rem;>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis sint at cum. Laudantium vitae nisi modi doloribus consequuntur? Autem voluptatem repellendus rerum, ad vero ipsa? Corrupti earum ipsa in?</p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card style="width: 15rem;"">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia excepturi soluta maxime quis placeat tempora saepe asperiores similique illum nesciunt illo enim repellat rem qui, aut accusamus porro dolor! Iure.</p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card style="width: 15rem;"">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card style="width: 15rem;"">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                      <p class="card-text"></p>
-                    </div>
-                  </div>
-              </div>
-              <div class="card-group">
-                <div class="card style="width: 15rem;>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veritatis sint at cum. Laudantium vitae nisi modi doloribus consequuntur? Autem voluptatem repellendus rerum, ad vero ipsa? Corrupti earum ipsa in?</p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card style="width: 15rem;"">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia excepturi soluta maxime quis placeat tempora saepe asperiores similique illum nesciunt illo enim repellat rem qui, aut accusamus porro dolor! Iure.</p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card style="width: 15rem;"">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                    <p class="card-text"></p>
-                  </div>
-                </div>
-                <div class="card style="width: 15rem;"">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo, ipsa est mollitia omnis, eius, esse laborum consequatur porro similique explicabo quasi temporibus perspiciatis dolore neque sint. Rem, eveniet mollitia.</p>
-                      <p class="card-text"></p>
-                    </div>
-                  </div>
-              </div>
-        </div>
+  </div>
+  <div class="container mt-4 mb-3" id="currentMovies">
+    <div class="row">
+      <h2>Movies in Theaters</h2>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="container mb-5" id="upcomingMovies">
+    <div class="row">
+      <h2>Upcoming Movies</h2>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">Rated: R</p>
+          <p class="card-text">User Ratings: 7.5/10</p>
+          <p class="card-text">Online Chatters: 0</p>
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

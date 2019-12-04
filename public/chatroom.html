@@ -20,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Movie Chats</a>
+        <a class="navbar-brand" href="main.html">Back to home</a>
     </nav>
     <div class="container mt-5" id="chatroomContainer">
         <div class="row">
@@ -35,6 +35,11 @@
                     <li>sample</li>
                     <li>sample</li>
                 </ul>
+                <div class="form-group username">
+                    <label for="inputUsername"><h4>Your Username:</h4></label>
+                    <input type="email" class="form-control" id="inputUsername" aria-describedby="emailHelp"
+                        placeholder="Enter username">
+                </div>
             </div>
             <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9" id="chatboxContainer">
                 <p>Alex: Wow this movie is cool</p>
@@ -42,11 +47,13 @@
                     earum obcaecati? Minima aperiam non expedita cumque deleniti quasi reprehenderit, maxime iusto vero
                     ex? Corporis ad debitis doloribus?</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center center" id="sendContainer">
-                    <form class="form-inline">
-                            <input type="text" class="form-control ml-3" placeholder="Your message" style="width: 90%; min-height: 40px; max-height: 40px;">
-                            <input type="submit" value="Send" class="btn btn-danger ml-2 sendButton">
-                        </form>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center center"
+                id="sendContainer">
+                <form class="form-inline">
+                    <input type="text" class="form-control ml-3" placeholder="Your message"
+                        style="width: 90%; min-height: 40px; max-height: 40px;">
+                    <input type="submit" value="Send" class="btn btn-danger ml-2 sendButton">
+                </form>
             </div>
         </div>
     </div>
