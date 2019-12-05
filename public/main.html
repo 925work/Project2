@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Notable&display=swap" rel="stylesheet">
+  <title>Movie Chats</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Movie Chats</h1>
+      <h3>Live chatrooms for the top movies in theaters.</h3>
+      <h3>To get started, simply click the movie that interests you the most!</h3>
+    </div>
+  </div>
+  <div class="container mt-4 mb-3" id="currentMovies">
+    <div class="row">
+      <h2>Movies in Theaters</h2>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard1">
+          <h5 class="card-title mr" id="theaterTitle1">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover1">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating1"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard2">
+          <h5 class="card-title mr" id="theaterTitle2">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover2">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating2"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard3">
+          <h5 class="card-title mr" id="theaterTitle3">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover3">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating3"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard4">
+          <h5 class="card-title mr" id="theaterTitle4">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover4">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating4"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard5">
+          <h5 class="card-title mr" id="theaterTitle5">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover5">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating5"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard6">
+          <h5 class="card-title mr" id="theaterTitle6">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover6">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating6"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard7">
+          <h5 class="card-title mr" id="theaterTitle7">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover7">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating7"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center" id="theaterCard8">
+          <h5 class="card-title mr" id="theaterTitle8">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3" id="theaterCover8">
+          <br>
+          <p class="card-text d-inline">User Ratings: </p>
+          <p class="card-text d-inline" id="theaterRating8"></p>
+          <p class="card-text d-inline">/10</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- <br> -->
+  <!-- <div class="container mb-5" id="upcomingMovies">
+    <div class="row">
+      <h2>Upcoming Movies</h2>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+      <div class="card style=" width: 15rem;>
+        <a href="#" class="card-body text-decoration-none text-secondary text-center">
+          <h5 class="card-title mr">Movie Title</h5>
+          <img src="https://via.placeholder.com/120x180" width="120px" height="180px" class="mx-auto mb-3">
+          <p class="card-text">User Ratings: /10</p>
+        </a>
+      </div>
+    </div>
+  </div> -->
+</body>
+
+</html>
