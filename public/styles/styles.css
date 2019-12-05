@@ -7,10 +7,12 @@ body {
 }
 
 /* log in page */
+h1{
+  font-family: 'Limelight', cursive;
+}
 
 .jumbotron {
-  font-family: 'Limelight', cursive;
-  background-color: black;
+  background-color:rgb(41, 41, 41);
   color: white;
 }
 
@@ -82,4 +84,18 @@ p {
 .sendButton{
   background-color: rgb(171, 1, 1);
   color: white;
+}
+
+#card-group{
+  text-decoration: none !important;
+}
+
+h5{
+  color: black !important;
+}
+
+.username{
+  position: absolute;
+  bottom:0;
+  left: 32px;
 }
