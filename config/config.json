@@ -8,7 +8,7 @@
   },
   "test": {
     "username": "root",
-    "password": "KnightFire92!",
+    "password": "",
     "database": "movie_chats_db",
     "host": "localhost",
     "dialect": "mysql",
