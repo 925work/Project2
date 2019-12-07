@@ -37,6 +37,9 @@ module.exports = function (app) {
     }).catch(function (error) {
       console.log(error);
     });
+  });
+
+  app.post("/movies/:id", function (req, res) {
 
   })
 
