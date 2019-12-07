@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "KnightFire92!",
+    "password": "root",
     "database": "movie_chats_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "KnightFire92!",
+    "password": null,
     "database": "movie_chats_db",
     "host": "localhost",
     "dialect": "mysql",
