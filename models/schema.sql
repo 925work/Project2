@@ -22,12 +22,6 @@ CREATE TABLE message
     PRIMARY KEY (message_id)
 );
 
-CREATE TABLE user_chat
-(
-    user_chat_chat_id CHAR(32),
-    user_chat_user_id CHAR(32),
-    PRIMARY KEY (user_chat_chat_id,user_chat_user_id)
-);
 
 CREATE TABLE chat
 (
