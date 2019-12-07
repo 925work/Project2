@@ -11,6 +11,17 @@ module.exports = function (app) {
     ).then(function (response) {
       console.log(response.data);
       res.send(response.data);
+      //create modules, movies module need x, sequelize needs to not auto incroment primary ID
+      //creat post module,
+
+      //for loop array
+      //check if id exists, if so pass over, if not create one
+      for (i = 0; i < response.data.length; i++) {
+        db.Movies.create({
+          id: response.data[i].id
+        });
+      }
+
     }).catch(function (error) {
       console.log(error);
     });
@@ -40,7 +51,9 @@ module.exports = function (app) {
   });
 
   app.post("/movies/:id", function (req, res) {
-
-  })
+    db.Post.create(req.body).then(function (dbPost) {
+      res.json(dbPost);
+    });
+  });
 
 };

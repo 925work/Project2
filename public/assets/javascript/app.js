@@ -53,4 +53,21 @@ $(document).ready(function() {
 
       $("#theaterRating8").html(response.results[7].vote_average);
   });
+});
+
+var post 
+
+$(".sendButton").on("click", function(){
+  event.preventDefault();
+  post = $(".moviePost");
+  // send to ajaz your post.val()
+  //thne clear next
+  $.ajax({
+    type: "POST",
+    url: url,
+    data: post,
+    success: success,
+    dataType: dataType
+  });
+  post.val("")
 })
