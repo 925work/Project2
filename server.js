@@ -1,15 +1,19 @@
-require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
 var db = require("./models");
 var bodyParser = require("body-parser");
+
+// Sets up the Express App
+// =============================================================
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-// Middleware
-app.use(express.urlencoded({ extended: false }));
+// Requiring our models for syncing
+var db = require("./models");
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
 
 //Handlebars
 app.engine(
@@ -19,6 +23,8 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
+// Static directory
+app.use(express.static("public"));
 
 // Routes
 require("./routes/apiRoutes")(app);
