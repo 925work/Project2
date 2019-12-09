@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "P@izley2013",
+    "password": "",
     "database": "movie_chats_db",
     "host": "localhost",
     "dialect": "mysql"
