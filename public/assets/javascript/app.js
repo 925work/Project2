@@ -1,11 +1,14 @@
 /* eslint-disable prettier/prettier */
 $(document).ready(function() {
+  var dataId;
   $.ajax({
     url: "/api/movies",
     method: "GET"
   }).then(response => {
       console.log(response);
       $("#theaterTitle1").html(response.results[0].title);
+
+      $("#theaterCard1").attr("data-id", response.results[0].id);
 
       $("#theaterCover1").attr("src","http://image.tmdb.org/t/p/w185/"+response.results[0].poster_path);
 
@@ -53,21 +56,36 @@ $(document).ready(function() {
 
       $("#theaterRating8").html(response.results[7].vote_average);
   });
-});
 
-var post 
 
 $(".sendButton").on("click", function(){
   event.preventDefault();
-  post = $(".moviePost");
+  var post = $(".moviePost").val().trim();
   // send to ajaz your post.val()
   //thne clear next
+  var tempObject = {
+    MovieId: dataId,
+    body: post
+
+  };
   $.ajax({
     type: "POST",
-    url: url,
-    data: post,
+    url: "/movies",
+    data: tempObject,
     success: success,
     dataType: dataType
   });
-  post.val("")
+  $(".moviePost").val("")
 })
+
+$(".card-body").on("click", function(){
+  dataId = $(this).attr("data-id")
+  // send to ajaz your post.val()
+  //thne clear next
+  console.log(dataId)
+  $.ajax({
+    type: "GET",
+    url: "/movies/"+ dataId
+  }); //.then to target module and display info need.
+})
+});
