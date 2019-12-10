@@ -19,46 +19,26 @@
 </head>
 
 <body>
-     
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Back to home</a>
+    </nav>
+    <div class="container mt-5" id="chatroomContainer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="chatroomTitle">
+                <h1 class="card-header"></h1>
             </div>
-            <div class="modal-body">
-                    <nav class="navbar navbar-dark bg-dark">
-                            <a class="navbar-brand" href="../index.html">Back to home</a>
-                        </nav>
-                        <div class="container mt-5" id="chatroomContainer">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="chatroomTitle">
-                                    <h1 class="card-header"></h1>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="chatboxContainer">
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center center"
-                                    id="sendContainer">
-                                    <form class="form-inline">
-                                        <input type="text" class="form-control ml-3 moviePost" placeholder="Your review"
-                                            style="width: 90%; min-height: 40px; max-height: 40px;">
-                                        <input type="submit" value="Send" class="btn btn-danger ml-2 sendButton">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="chatboxContainer">
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center center"
+                id="sendContainer">
+                <form class="form-inline">
+                    <input type="text" class="form-control ml-3" placeholder="Your review"
+                        style="width: 90%; min-height: 40px; max-height: 40px;">
+                    <input type="submit" value="Send" class="btn btn-danger ml-2 sendButton">
+                </form>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
     <script src="../assets/javascript/app.js"></script>
 
 </body>
