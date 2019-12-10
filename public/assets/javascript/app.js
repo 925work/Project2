@@ -88,4 +88,7 @@ $(".card-body").on("click", function(){
     url: "/movies/"+ dataId
   }); //.then to target module and display info need.
 })
+$(".card").on('click', function () {
+  $('#exampleModalLong').modal()
+})
 });
