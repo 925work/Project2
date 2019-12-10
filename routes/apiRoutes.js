@@ -9,7 +9,22 @@ module.exports = function (app) {
     var queryURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + process.env.APIKEY + "&language=en-US&page=1";
     axios.get(queryURL
     ).then(function (response) {
-      console.log(response.data);
+      for (let i = 0; i < response.data.results.length; i++) {
+
+        db.Movies.findOne({
+          where: { id: response.data.results[i].id }
+        }).then(function (data) {
+          console.log("data" + data);
+          if (data === null) {
+            db.Movies.create({
+              id: response.data.results[i].id,
+              name: response.data.results[i].title
+            });
+
+          }
+        });
+       
+      }
       res.send(response.data);
     }).catch(function (error) {
       console.log(error);
@@ -28,19 +43,31 @@ module.exports = function (app) {
     });
   });
 
-  app.get("/movies/:id", function (req, res) {
-    var queryURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + process.env.APIKEY + "&language=en-US&page=1";
-    axios.get(queryURL
+  // app.get("/movies/:id", function (req, res) {
+  //   var queryURL = "https://api.themoviedb.org/3/movie/now_playing?api_key=" + process.env.APIKEY + "&language=en-US&page=1";
+  //   axios.get(queryURL
+  //   ).then(function (response) {
+  //     res.send(response.data);
+  //   }).catch(function (error) {
+  //     console.log(error);
+  //   });
+  // });
+
+    app.get("/movies/:id", function (req, res) {
+      var movieId = req.params.id
+      //find all post with id
+
     ).then(function (response) {
-      console.log(response.data);
       res.send(response.data);
     }).catch(function (error) {
       console.log(error);
     });
   });
 
-  app.post("/movies/:id", function (req, res) {
-
-  })
+  app.post("/movies", function (req, res) {
+    db.Post.create(req.body).then(function (dbPost) {
+      res.json(dbPost);
+    });
+  });
 
 };
